@@ -8,8 +8,8 @@ let numOfItemsCounter = 0;
   enterButton.onclick = function (){
     numOfItemsArr.push(numOfItemsCounter);
     let showEdit = false;
-
-    const newTask = document.getElementById("newTask").value;
+    let newTask = document.getElementById("newTask");
+    const newTaskValue = document.getElementById("newTask").value;
     const todoItem = document.createElement("li");
     const newId = numOfItemsArr[numOfItemsCounter].toString();
     const container = document.createElement('div');
@@ -17,7 +17,7 @@ let numOfItemsCounter = 0;
     const description = document.createElement('span');
     description.setAttribute("id", "span");
 
-    description.innerText = newTask;
+    description.innerText = newTaskValue;
     todoItem.id = newId;
     container.appendChild(description);
     todoItem.appendChild(container);
@@ -85,5 +85,5 @@ let numOfItemsCounter = 0;
 
     numOfItemsCounter++;
     list.append(todoItem);
-
+    newTask.value = "";
   }
