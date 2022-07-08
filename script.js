@@ -13,7 +13,7 @@ let numOfItemsCounter = 0;
     const todoItem = document.createElement("li");
     const newId = numOfItemsArr[numOfItemsCounter].toString();
     const container = document.createElement('div');
-    container.class = "container";
+    container.className = "container";
     const description = document.createElement('span');
     description.setAttribute("id", "span");
 
@@ -25,7 +25,7 @@ let numOfItemsCounter = 0;
     
     // delete
     const deleteBtn = document.createElement("button");
-    deleteBtn.className = "bigBtn";
+    deleteBtn.classList.add("bigBtn", "new-element");
     deleteBtn.textContent = "Delete";
 
     deleteBtn.onclick = function () {
@@ -40,14 +40,15 @@ let numOfItemsCounter = 0;
     // edit Task
 
     const showEditBtn = document.createElement("button");
-    showEditBtn.className = "bigBtn";
+    showEditBtn.classList.add("bigBtn", "new-element");
     showEditBtn.textContent = "Show edit";
     const editBtn = document.createElement("button");
-    editBtn.className = "bigBtn";
+    editBtn.classList.add("bigBtn", "new-element");
     editBtn.textContent = "Edit";
 
     const editTxt = document.createElement("input");
     editTxt.setAttribute("id", "editTxt");
+    editTxt.classList.add("new-element");
     editTxt.placeholder = "Edit this task";
 
 
