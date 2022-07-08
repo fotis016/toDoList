@@ -1,0 +1,90 @@
+#root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  padding: 32px;
+}
+
+h1{
+  color: #111; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 50px;
+  font-weight: bold; 
+  letter-spacing: -1px; 
+  line-height: 1;
+  text-align: center; 
+}
+
+body{
+  background-color: #10e88e;
+}
+
+.list > li {
+  background: #d3fc3f;
+  width: auto;
+  height: auto;
+  list-style: none;
+  padding: 8px;
+  border: 1px solid lightgray;
+}
+
+#enterButton{
+  background-color: gray;
+  border: none;
+  color: black;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 2px;
+}
+
+#enterButton:hover{
+  
+  background-color: black;
+  color: white;
+}
+
+#enterButton:active{
+  vertical-align: center;
+  padding: 3px 8px;
+}
+
+#newTask{
+  outline: none;
+  transition: .3s;
+  width:200px;
+  padding:10px;
+  margin-left: 40px;
+}
+
+#editTxt{
+  outline: none;
+  transition: .3s;
+  width:110px;
+  padding:10px;
+  margin-left: 40px;
+}
+
+.bigBtn{
+  background-color: gray;
+  font-size: small;
+  border: none;
+  color: black;
+  display: inline-block;
+  padding: 15px 20px;
+  margin-left: 2px;
+}
+
+.bigBtn:hover{
+  background-color: black;
+  color:white;
+}
+
+.bigBtn:active{
+  vertical-align: top;
+  padding: 13px 18px;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
